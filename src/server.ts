@@ -3,7 +3,7 @@
 export function handle(req: Request): Response {
   const { pathname } = new URL(req.url);
   if (pathname === "/healthz") return new Response("ok");
-  return new Response("hello (E5 시나리오 1 두 번째 커밋)");
+  return new Response("hello (E5 시나리오 7: ESO 인증 장애 중 배포)");
 }
 
 if (import.meta.main) {

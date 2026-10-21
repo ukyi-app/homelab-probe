@@ -3,7 +3,7 @@
 export function handle(req: Request): Response {
   const { pathname } = new URL(req.url);
   if (pathname === "/healthz") return new Response("ok");
-  return new Response("hello (병합 키 회전 뒤 자동 병합 확인)");
+  return new Response("hello (Restrict updates 뒤 자동 병합 확인)");
 }
 
 if (import.meta.main) {
